@@ -1,0 +1,39 @@
+# This file contains issues that can be detected by YAML tools
+
+# Duplicate keys
+key1: value1
+key1: value2
+
+# Invalid syntax: missing whitespace after colon
+invalid:value
+
+# Invalid indentation
+parent:
+  child1: value1
+ child2: value2  # Incorrect indentation
+
+# Too many spaces
+too_many_spaces:          value
+
+# Trailing spaces
+trailing_spaces: value    
+
+# Hardcoded credentials
+password: supersecretpassword123
+api_key: 1234567890abcdef
+
+# Invalid boolean values
+trueish: True  # Should be true
+falseish: False  # Should be false
+
+# Tabs instead of spaces (represented as best as possible)
+tabs:	value
+
+# Too long line
+too_long_line: This line is really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really, really long
+
+# Inconsistent key naming styles
+snake_case_key: value
+camelCaseKey: value
+PascalCaseKey: value
+kebab-case-key: value

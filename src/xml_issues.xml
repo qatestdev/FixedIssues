@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file contains issues that can be detected by XML tools -->
+
+<!-- Missing closing tag -->
+<root>
+  <element>Value without closing tag
+  
+  <!-- Mismatched tags -->
+  <mismatch>Value with mismatched closing tag</different>
+  
+  <!-- Attribute without quotes -->
+  <node attribute=value>Invalid attribute</node>
+  
+  <!-- Duplicate attributes -->
+  <duplicate attr="value1" attr="value2">Duplicate attributes</duplicate>
+  
+  <!-- Invalid character in element name -->
+  <invalid-name>Invalid element name</invalid-name>
+  
+  <!-- Missing root element -->
+  </root>
+<extra>This is outside the root element</extra>
+
+<!-- Unclosed comment
+This comment is not closed properly
+
+<!-- Entity not declared -->
+&undeclared;
+
+<!-- Invalid doctype -->
+<!DOCTYPE root [
+  <!ELEMENT root (#PCDATA)>
+  <!ATTLIST root invalid
+]>
+
+<!-- Invalid processing instruction -->
+<?invalid processing instruction ?>

@@ -1,0 +1,39 @@
+{
+  "name": "json-issues",
+  "version": "1.0.0",
+  "description": "JSON file with issues for detection",
+  
+  // Comments are not allowed in JSON
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "axios": "0.19.0"  // Known vulnerability
+  },
+  
+  "scripts": {
+    "start": "node server.js"
+  }
+  
+  // Missing comma
+  "keywords": ["json", "issues", "detection"],
+  
+  // Duplicate key
+  "name": "duplicate-name",
+  
+  // Trailing comma not allowed in JSON
+  "engines": {
+    "node": ">=12.0.0",
+  },
+  
+  // Invalid value (unquoted)
+  "private": true,
+  
+  // Invalid syntax (single quotes)
+  'invalid': 'using single quotes',
+  
+  // Invalid number
+  "number": 123.45.67,
+  
+  // Invalid escape sequence
+  "invalid-escape": "This has an invalid escape sequence: \a"
+}
