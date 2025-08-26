@@ -13,17 +13,6 @@ function unusedParam($unused) {
     echo "This function doesn't use its parameter";
 }
 
-// Unused private method
-class UnusedMethod {
-    private function neverCalled() {
-        echo "This method is never called";
-    }
-    
-    public function publicMethod() {
-        echo "This method is public";
-    }
-}
-
 // Eval is evil
 function evalUsage($code) {
     eval($code);
