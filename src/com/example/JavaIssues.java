@@ -6,8 +6,6 @@ import java.util.List;
 
 public class JavaIssues {
 
-    private String publicField = "This should be private";
-
     // Inefficient String concatenation
     public String inefficientConcat() {
         String result = "";

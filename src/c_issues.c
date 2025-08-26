@@ -14,15 +14,9 @@ void memory_leak() {
     // No free(ptr) - memory leak
 }
 
-// Unused function
-void unused_function() {
-    printf("This function is never called\n");
-}
-
 // Unreachable code
 void unreachable_code() {
     return;
-    printf("This will never be executed\n"); // Unreachable code
 }
 
 // Uninitialized variable
