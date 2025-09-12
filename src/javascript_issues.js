@@ -1,8 +1,5 @@
 // This file contains issues that can be detected by ESLint
 function calculateTotal() {
-  // Unused variable
-  const tax = 0.1;
-  
   // Missing semicolon
   const subtotal = 100
   
@@ -23,7 +20,7 @@ function displayTotal() {
 
 // Another duplicate function declaration
 function displayTotal() {
-  console.log(total2);
+  console.log("total");
 }
 
 // Using == instead of ===
